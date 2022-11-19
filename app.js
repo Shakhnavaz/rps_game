@@ -44,13 +44,6 @@ function getComputerChoice() {
 
 
 
-function getUserChoice() {
-    let userInput = window.prompt('Choose rock, paper or scissors:')
-    return userInput
-}
-
-getUserChoice();
-
 function playRound(playerSelection, computerSelection) {
 
     if (playerSelection === computerSelection) {
@@ -75,7 +68,11 @@ function playRound(playerSelection, computerSelection) {
         console.log('Please enter rock, paper or scissors')
     }
 } 
+const playerSelection = "paper";
+const computerSelection = getComputerChoice();
 
-console.log(playRound(getUserChoice, getComputerChoice));
 
+console.log('me: '+ playerSelection)
+console.log('computer: ' + getComputerChoice())
+console.log(playRound(playerSelection, computerSelection));      
 
