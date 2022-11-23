@@ -13,8 +13,12 @@ function getComputerChoice() {
     return rps
 }       
 
-// console.log(getComputerChoice(mathResult));
+function getPlayerChoice() {
+    let userInput = prompt('Input rock, paper or scissors: ')
+    return userInput
+}
 
+// console.log(getComputerChoice(mathResult));
 
 
 function playRound(playerSelection, computerSelection) {
@@ -27,21 +31,21 @@ function playRound(playerSelection, computerSelection) {
         return `You Win! ${playerSelection} beats ${computerSelection}!`
 
     } else if (playerSelection.toLowerCase() == 'paper' && computerSelection == 'scissors') {
-        return `You lost! ${computerSelection} beats ${playerSelection}!}`
+        return `You lost! ${computerSelection} beats ${playerSelection}!`
 
     } else if (playerSelection.toLowerCase() == 'paper' && computerSelection == 'rock') {
-        return `You win! ${playerSelection} beats ${computerSelection}!}`
+        return `You win! ${playerSelection} beats ${computerSelection}!`
 
     } else if (playerSelection.toLowerCase() == 'scissors' && computerSelection == 'paper') {
-        return `You win! ${playerSelection} beats ${computerSelection}!}`
+        return `You win! ${playerSelection} beats ${computerSelection}!`
 
     } else if (playerSelection.toLowerCase() == 'scissors' && computerSelection == 'rock') {
-        return `You lost! ${computerSelection} beats ${playerSelection}!}`
+        return `You lost! ${computerSelection} beats ${playerSelection}!`
     } else {
         return 'Please enter rock, paper or scissors'
     }
 } 
-const playerSelection = "rock";
+const playerSelection = getPlayerChoice();
 const computerSelection = getComputerChoice();
 
 
