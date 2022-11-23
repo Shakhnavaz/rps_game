@@ -21,7 +21,12 @@ function getPlayerChoice() {
 // console.log(getComputerChoice(mathResult));
 
 
+let playerSelection = getPlayerChoice();
+let computerSelection = getComputerChoice();
+
 function playRound(playerSelection, computerSelection) {
+    
+
 
     if (playerSelection.toLowerCase() === computerSelection) {
         return 'Tie!'
@@ -44,26 +49,27 @@ function playRound(playerSelection, computerSelection) {
     } else {
         return 'Please enter rock, paper or scissors'
     }
+    
 } 
-const playerSelection = getPlayerChoice();
-const computerSelection = getComputerChoice();
 
 
-
-console.log('me: ' + playerSelection.toLowerCase())
-console.log('computer: ' + getComputerChoice())
 // console.log(playRound(playerSelection, computerSelection));      
 
 function game() {
-    // for (let i = 0; i > 5; i++) {
-    //     return i;
-    // }
-    console.log(playRound(playerSelection, computerSelection));      
-    console.log(playRound(playerSelection, computerSelection));      
-    console.log(playRound(playerSelection, computerSelection));      
-    console.log(playRound(playerSelection, computerSelection));      
-    console.log(playRound(playerSelection, computerSelection));      
+    
+    playerSelection = getPlayerChoice()
+    computerSelection = getComputerChoice()
+    console.log('---------------------')
+    console.log('me: ' + playerSelection.toLowerCase())
+    console.log('computer: ' + getComputerChoice())
+    return playRound(playerSelection, computerSelection)     
 
 }
 
-console.log(game());
+for (let i = 0; i > 5; i++) {
+    if (i > 5) {
+        console.log(game());
+    }
+}
+
+
