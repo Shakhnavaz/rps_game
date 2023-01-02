@@ -31,6 +31,6 @@ function game() {
 }
 
 // playing 5 rounds
-for (let i = 0; i < 5; i++) {
-  console.log(game());
-}
+// for (let i = 0; i < 5; i++) {
+//   console.log(game());
+// }

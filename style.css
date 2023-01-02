@@ -1,0 +1,28 @@
+.choice {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 700px;
+    height: 100px;
+}
+
+.rock {
+    color: #fff;
+    padding: 20px;
+    background-color:maroon;
+
+}
+
+.paper {
+    padding: 20px;
+
+    background-color: bisque;
+}
+
+.scissors {
+    padding: 20px;
+
+    background-color: coral;
+
+}
