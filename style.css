@@ -5,24 +5,26 @@
     align-items: center;
     width: 700px;
     height: 100px;
+    border-radius: 15px;
 }
 
 .rock {
     color: #fff;
     padding: 20px;
     background-color:maroon;
+    border-radius: 15px;
 
 }
 
 .paper {
     padding: 20px;
-
+    border-radius: 15px;
     background-color: bisque;
 }
 
 .scissors {
     padding: 20px;
-
+    border-radius: 15px;
     background-color: coral;
 
 }
