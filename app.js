@@ -30,7 +30,12 @@ function game() {
   return playRound(playerSelection, computerSelection);
 }
 
+const rock = document.getElementById('rock')
+
 // playing 5 rounds
 // for (let i = 0; i < 5; i++) {
 //   console.log(game());
 // }
+// console.log(game())
+
+console.log(rock)
